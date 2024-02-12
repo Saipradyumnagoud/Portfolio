@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portifolio</title>
+    <link rel="stylesheet" href="style.css">
+
+        <!-- Other meta tags and title -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <h1 style="font-size: 40px;"><i><u>Chiragoni Sai Pradyumna goud </u></i></h1>
+            <ul>
+                <li><a href="#home">Home</a> </li>
+                <li><a href="#about">About</a> </li>
+                <li><a href="#projects">Projects</a> </li>
+                <li><a href="#contact">Contact</a> </li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h3 style="font-size: 50px;"><b>Welcome!!</b></h3>
+            <p ><pre>
+            Hello, This is sai pradyumna welcome to myspace here are few of my projects which I have worked on and you can Contact 
+        me from here. As a developer, I thrive on bringing ideas to life, crafting compelling narratives, and delivering 
+        exceptional results. Whether it's through captivating designs, captivating writing, or cutting-edge solutions, my 
+        portfolio reflects a dedication to excellence and a commitment to exceeding expectationsLook through my portfolio 
+        to see a variety of carefully designed projects that are meant to inspire, engage, and make an impact. Every thing 
+        I create, from polished graphic designs to engrossing marketing campaigns, embodies my own viewpoint and constant 
+        commitment to excellence.<pre></p>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="D:\Html codes\img.jpg">
+
+                    </div>
+                    <div class="about-col-2">
+                        <h1 >About Me</h1>
+                        <p>This is sai pradyumna and I am intrested in web devlopment and I have finished few projects which can show my talent and I have also grip in few coding languages such as c | java and which might be help full in some or the other ways and I am very strict to my work and very punchal to And this might be shown my talent </p> 
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>   
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul >
+                                <li>C</li>
+                                <br>
+                                <li>JAVA</li>
+                                <br>
+                                <li>HTML</li>
+                                <br>
+                                <li>CSS</li>
+                                <br>
+                                <li>Java Script</li>
+                                <br>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span style="color: goldenrod">2021-22</span><br>Sri chaitanya jr kalasala</li>
+                                <br>
+                                <li><span style="color: goldenrod">2022-26</span><br>Btech Kakatiya Insitute of technology and science</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 style="font-size: 50px"><b>My Projects</b></h1>
+            <br>
+            <br>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://bit.ly/49l9aOz">
+                    <div class="layer">
+                        <h3>Speedometer control system</h3>
+                        <p><pre>This project is about Speedometer control system in which it helps to the 
+driver while driving or riding.</pre></p>
+                         <a href="https://drive.google.com/drive/folders/1pLFhr0VXSfd4YhQ5231JWe54Jty7b51O?usp=drive_link"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://shutr.bz/3SLcBZG">
+                    <div class="layer">
+                        <h3>Car rental System</h3>
+                        <P><pre>This project is about car rental system in which it has a carrental system 
+which help the compay to make the work faster and simpler.
+                        </pre></P>
+                        <a href="https://drive.google.com/file/d/1mrAgBeDKPSx-uefSxQAfdJ6JJR47VAVj/view?usp=drive_link"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+<br><br><br><br><br><br>
+    <div id="contact">
+        <div class="container"> 
+            <div class="contactleft">
+                <h1 style="font-size: 50px">Contact Me</h1>
+                <p> Email : saipradyumnagoud@gmail.com</p>
+                <p> Mobile number : +918333086241</p>
+                <p>Other contacts</p>
+                <a href="https://www.linkedin.com/in/saipradyumnagoudch/" target="_blank"><i class="fab fa-linkedin"></i> </a> &nbsp;&nbsp;
+                <a href="https://github.com/saipradyumnagoud" target="_blank"><i class="fab fa-github" ></i> </a>&nbsp;&nbsp;
+                <a href="https://www.instagram.com/saipradyumnaa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <br>
+            <a href="https://docs.google.com/document/d/1ymbgUBUrqW2pHU-HB53zGqJj1nJMnljF/edit?usp=sharing&ouid=107570593725880317088&rtpof=true&sd=true" class="cv-link" >CV</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+    </script>
+</body>
+</html
