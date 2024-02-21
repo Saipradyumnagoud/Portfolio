@@ -143,3 +143,23 @@ nav ul li a{
     font-size: 20px;
     line-height: 1.5; /* Added line-height for better readability */
 }
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px 5%; /* Adjust padding for smaller screens */
+    }
+    nav ul li {
+        margin: 5px 5px; /* Adjust margin for smaller screens */
+    }
+    .header-text {
+        font-size: 16px; /* Decrease font size for smaller screens */
+    }
+    .about-col-1 img {
+        width: 100%; /* Make the image responsive */
+    }
+    .about-col-2 {
+        flex-basis: 100%; /* Make the about column full width on smaller screens */
+    }
+    .work img {
+        width: 100%; /* Make project images responsive */
+    }
+}
