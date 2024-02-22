@@ -143,7 +143,3 @@ nav ul li a{
     font-size: 20px;
     line-height: 1.5; /* Added line-height for better readability */
 }
-@media only screen and (max-width : 600px)
-{
-    
-}
