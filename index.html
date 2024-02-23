@@ -142,6 +142,12 @@ which help the compay to make the work faster and simpler.
             </div>
         </div>
     </div>
+<div class="hamburger-menu" onclick="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+</div>
+
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
@@ -156,7 +162,11 @@ which help the compay to make the work faster and simpler.
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
-        
+        // Function to toggle the display of the navigation menu
+function toggleMenu() {
+    document.querySelector('nav ul').classList.toggle('show');
+}
+
     </script>
 </body>
 </html
