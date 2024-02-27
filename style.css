@@ -143,3 +143,35 @@ nav ul li a{
     font-size: 20px;
     line-height: 1.5; /* Added line-height for better readability */
 }
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li {
+    margin-right: 20px;
+}
+
+#navbar ul li:last-child {
+    margin-right: 0;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
