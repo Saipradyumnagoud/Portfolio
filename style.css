@@ -179,3 +179,23 @@ form {
     text-align: center;
     font-size: 40px;
 }
+.about-col-1 {
+    flex-basis: 35%;
+    position: relative; 
+}
+
+.about-col-1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -20px;
+    width: 1px;
+    background-color: white; 
+    z-index: 1; 
+}
+
+.about-col-2 {
+    flex-basis: 60%; 
+    padding-left: 40px;
+}
