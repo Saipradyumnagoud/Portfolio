@@ -207,15 +207,18 @@ form {
 }
 form input,form textarea{
     width: 25%;
+    height: 6%;
     border: 0;
     outline: none;
     background-color: rgb(211, 210, 210);
     padding: 15px;
     margin: 15px 0;
+    color: black;
     font-size: 18px ;
     border-radius: 6px;
 }
 .submitbutton {
+    width: 10%;
     display: inline-block;
     padding: 10px 20px;
     border: 2px solid black; 
