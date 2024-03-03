@@ -176,7 +176,7 @@ nav ul li a{
     font-size: 16px;
 }
 form {
-    text-align: center;
+    ;
     font-size: 40px;
 }
 .about-col-1 {
@@ -198,4 +198,35 @@ form {
 .about-col-2 {
     flex-basis: 60%; 
     padding-left: 40px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    align : right;
+}
+form input,form textarea{
+    width: 25%;
+    border: 0;
+    outline: none;
+    background-color: rgb(211, 210, 210);
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px ;
+    border-radius: 6px;
+}
+.submitbutton {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid black; 
+    color: grey;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: border-color 0.5s; 
+}
+.submitbutton:hover
+{
+    background-color: white;
+    color: black;
 }
