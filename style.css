@@ -233,3 +233,13 @@ form input,form textarea{
     background-color: white;
     color: black;
 }
+.collab {
+    display: inline-block;
+    padding: 15px 40px;
+    border: 2px solid blue; 
+    color: white;
+    background-color: lightblue;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: border-color 0.5s; 
+}
