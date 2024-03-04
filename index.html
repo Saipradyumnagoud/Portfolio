@@ -154,22 +154,21 @@ which help the compay to make the work faster and simpler.
     <div class="contact-right" >
         </br></br></br></br></br>
         <h1 style="font-size: 60px; font-style: italic;"><u>Lets collaborate</u></h1>
-        <form   name="contact" netlify>
+        <form name="contact" method="POST" data-netlify="true">
             <p>
-              <label style="font-size: 30px;">Name : <input type="text" name="name" width="40%" placeholder="Your Name"/></label>
+                <label style="font-size: 30px;">Name: <input type="text" name="name" placeholder="Your Name" /></label>
             </p>
             <p>
-              <label style="font-size: 30px;">Email : <input type="email" name="email" placeholder="Your Email"/></label>
+                <label style="font-size: 30px;">Email: <input type="email" name="email" placeholder="Your Email" /></label>
             </p>
             <p>
-                <label style="font-size: 30px;">Message : </label><textarea rows="6" cols="6" placeholder="Your Message"></textarea>"
-            </p>  
-            
-            <p>
-                <button type="submit" class="submitbutton" width="">Send</button>
-              </p>      
+                <label style="font-size: 30px;">Message: </label><textarea name="message" rows="6" cols="6" placeholder="Your Message"></textarea>"
             </p>
-          </form>
+            <p>
+                <button type="submit" class="submitbutton">Send</button>
+            </p>
+        </form>
+        
         </div>
     </div>
 </div>
