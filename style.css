@@ -126,7 +126,7 @@ nav ul li a{
 .cv-link {
     display: inline-block;
     padding: 15px 40px;
-    border: 2px solid blue; 
+    border: 2px solid black; 
     color: white;
     background-color: lightblue;
     text-decoration: none;
