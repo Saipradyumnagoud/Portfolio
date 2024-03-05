@@ -244,6 +244,6 @@ form input,form textarea{
     transition: border-color 0.5s; 
 }
 .collab:hover{
-    background-color: lightseagreen;
+    background-color: white;
     color: black;
 }
