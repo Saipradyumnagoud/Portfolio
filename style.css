@@ -204,7 +204,7 @@ form {
     flex-basis: 35%;
 }
 .contact-right{
-    align : right;
+    align-items : right;
 }
 form input,form textarea{
     width: 40%;
