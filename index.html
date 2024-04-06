@@ -136,7 +136,11 @@ which help the compay to make the work faster and simpler.
             </div>
             </div>
             <div id="additionalItems" class="menu-items" style="display: none;">
+                
             </div>
+            <br>
+            <div style="display: flex; justify-content: center;">
+                <button  class="cv-link" onclick="loadMore()">Load More <i class="fas fa-angle-down"></i></button>
         </div>
     </div>
 <br>
@@ -230,6 +234,19 @@ which help the compay to make the work faster and simpler.
 <!-- TWIPLA Tracking Code for saipradyumna.nelify.app --><script>
 (function(v,i,s,a,t){v[t]=v[t]||function(){(v[t].v=v[t].v||[]).push(arguments)};if(!v._visaSettings){v._visaSettings={}}v._visaSettings[a]={v:'1.0',s:a,a:'1',t:t};var b=i.getElementsByTagName('body')[0];var p=i.createElement('script');p.defer=1;p.async=1;p.src=s+'?s='+a;b.appendChild(p)})(window,document,'//app-worker.visitor-analytics.io/main.js','3c5fa73f-da3a-11ee-95e2-dab3ea04d90d','va')
 </script><!-- TWIPLA Tracking Code for saipradyumna.nelify.app -->
-    
+    <script>
+    function loadMore() {
+        var additionalItems = document.getElementById("additionalItems");
+        var loadMoreBtn = document.querySelector('.btn');
+      
+        if (additionalItems.style.display === "none") {
+          additionalItems.style.display = "block";
+          loadMoreBtn.innerText = "Load Less";
+        } else {
+          additionalItems.style.display = "none";
+          loadMoreBtn.innerText = "Load More";
+        }
+        additionalItems.scrollIntoView({ behavior: "smooth" });
+      }</script>
 </body>
 </html>
