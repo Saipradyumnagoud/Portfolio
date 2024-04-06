@@ -123,9 +123,11 @@ nav ul li a{
     border-radius: 10px;
     display: block;
     transition: transform 0.3s ease;
+    
 }
 .work img:hover {
-    transform: translateY(-5px); /* Move image up by 5 pixels on hover */
+    transform: translateX(-5px); /* Move image up by 5 pixels on hover */
+    
 }
 .cv-link {
     display: inline-block;
