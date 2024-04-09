@@ -323,9 +323,7 @@ form input,form textarea{
             .work img {
                 width: 100%; /* Make project images responsive */
             }
-            #navbar h1{
-                height: 
-            }
+            
             .desktop-only {
                 display: none;
             }
