@@ -190,7 +190,7 @@ form {
     position: relative; 
 }
 
-.about-col-1::after {
+/* .about-col-1::after {
     content: '';
     position: absolute;
     top: 0;
@@ -199,7 +199,7 @@ form {
     width: 1px;
     background-color: white; 
     z-index: 1; 
-}
+} */
 
 .about-col-2 {
     flex-basis: 60%; 
@@ -298,3 +298,35 @@ form input,form textarea{
   .btn:hover::before {
     width: 160%;
   }
+  /* .about-col-1 hr {
+    display: none;
+} */
+        @media only screen and (max-width: 768px) {
+            .container {
+                padding: 10px; /* Adjust padding for smaller screens */
+            }
+            nav ul li {
+                margin: 5px 0; /* Adjust margin for smaller screens */
+            }
+            .header-text {
+                font-size: 24px; /* Decrease font size for smaller screens */
+            }
+            .about-col-1 img {
+                width: 100%; /* Make the image responsive */
+                border-radius: 0; /* Remove border radius for the image */
+                margin-bottom: 20px; /* Add some space below the image */
+            }
+            .about-col-2 {
+                flex-basis: 100%; /* Make the about column full width on smaller screens */
+                text-align: center; /* Center align the text */
+            }
+            .work img {
+                width: 100%; /* Make project images responsive */
+            }
+            #navbar h1{
+                height: 
+            }
+
+        }
+    
+    
