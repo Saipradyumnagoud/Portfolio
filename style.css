@@ -126,7 +126,7 @@ nav ul li a{
     
 }
 .work img:hover {
-    transform: translateX(-5px); /* Move image up by 5 pixels on hover */
+    transform: translateX(-5px); 
     
 }
 .cv-link {
