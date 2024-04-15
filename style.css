@@ -301,6 +301,10 @@ form input,form textarea{
   /* .about-col-1 hr {
     display: none;
 } */
+.about{
+    font-size: 100px; 
+    font-style: italic;
+}
         @media only screen and (max-width: 768px) {
             .container {
                 padding: 10px; /* Adjust padding for smaller screens */
@@ -328,7 +332,8 @@ form input,form textarea{
                 display: none;
             }
             .about{
-                font-size: 20px;
+                
+                font-size: 2px;
                 text-align: center;
             }
         }
