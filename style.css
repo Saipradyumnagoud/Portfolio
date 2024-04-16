@@ -304,6 +304,7 @@ form input,form textarea{
 .about{
     font-size: 100px; 
     font-style: italic;
+    color: white;
 }
         @media only screen and (max-width: 768px) {
             .container {
@@ -336,6 +337,7 @@ form input,form textarea{
                 font-size: 2px;
                 text-align: center;
             }
+            .
         }
     
     
