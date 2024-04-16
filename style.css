@@ -341,6 +341,26 @@ form input,form textarea{
             .about-col-1{
                 flex-basis: 100%;
             }
+            .contact-right { /* Center-align the content */
+                margin-top: 50px; /* Add some top margin for better spacing */
+              }
+            
+            .contact-right{
+                align-items : right;
+                font-size: 20px;
+            }
+            form input,form textarea{
+                height: 2%;
+                width: 70%;
+                border: 0;
+                outline: none;
+                background-color: rgb(211, 210, 210);
+                padding: 10px;
+                margin: 15px 0;
+                color: black;
+                font-size: 18px ;
+                border-radius: 6px;
+            }
         }
     
     
