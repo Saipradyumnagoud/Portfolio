@@ -308,25 +308,25 @@ form input,form textarea{
 }
         @media only screen and (max-width: 768px) {
             .container {
-                padding: 10px; /* Adjust padding for smaller screens */
+                padding: 10px; 
             }
             nav ul li {
-                margin: 5px 0; /* Adjust margin for smaller screens */
+                margin: 5px 0; 
             }
             .header-text {
-                font-size: 24px; /* Decrease font size for smaller screens */
+                font-size: 24px; 
             }
             .about-col-1 img {
-                width: 100%; /* Make the image responsive */
-                border-radius: 0; /* Remove border radius for the image */
-                margin-bottom: 20px; /* Add some space below the image */
+                width: 100%; 
+                border-radius: 0;
+                margin-bottom: 20px; 
             }
             .about-col-2 {
-                flex-basis: 100%; /* Make the about column full width on smaller screens */
-                text-align: center; /* Center align the text */
+                flex-basis: 100%; 
+                text-align: center; 
             }
             .work img {
-                width: 100%; /* Make project images responsive */
+                width: 100%; 
             }
             
             .desktop-only {
