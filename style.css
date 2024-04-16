@@ -334,10 +334,13 @@ form input,form textarea{
             }
             .about{
                 
-                font-size: 2px;
+                font-size: 50px;
                 text-align: center;
+                color: white;
             }
-            .
+            .about-col-1{
+                flex-basis: 100%;
+            }
         }
     
     
