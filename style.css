@@ -306,6 +306,10 @@ form input,form textarea{
     font-style: italic;
     color: white;
 }
+.get{
+    font-size: 60px; 
+    font-style: italic;
+}
         @media only screen and (max-width: 768px) {
             .container {
                 padding: 10px; 
@@ -350,6 +354,7 @@ form input,form textarea{
                 font-size: 20px;
             }
             form input,form textarea{
+                font-size: 10px;
                 height: 2%;
                 width: 70%;
                 border: 0;
@@ -372,7 +377,13 @@ form input,form textarea{
                 border-radius: 5px;
                 transition: border-color 0.7s; 
             }
-
+            .label{
+                font-size: 7px;
+            }
+            .get{
+                font-size: 50px;
+                text-align: center;
+            }
         }
     
     
