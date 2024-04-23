@@ -31,6 +31,7 @@ nav ul li a{
     text-decoration: white;
     font-size: 15px;
 }
+
 .header-text
 {
     margin-top : 30%;
@@ -173,7 +174,7 @@ nav ul li a{
 }
 
 #navbar ul li:last-child {
-    margin-right: 0;
+    margin-right: 25px;
 }
 
 #navbar ul li a {
@@ -310,6 +311,27 @@ form input,form textarea{
     font-size: 60px; 
     font-style: italic;
 }
+/* .sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(255, 255,255,0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+} */
+
         @media only screen and (max-width: 768px) {
             .container {
                 padding: 10px; 
