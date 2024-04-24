@@ -226,20 +226,21 @@ form input,form textarea{
     border-radius: 6px;
 }
 .submitbutton {
-    width: 10%;
+    width: 14%;
     display: inline-block;
     padding: 10px 20px;
-    border: 2px solid black; 
-    color: grey;
-    background-color: red;
+    border: 1px solid blue; 
+    color: blue;
+    background-color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 15px;
     transition: border-color 0.5s; 
 }
 .submitbutton:hover
 {
-    background-color: white;
-    color: black;
+    background-color: blue;
+    color: white;
+    border: 1px solid white;
 }
 .collab {
     display: inline-block;
