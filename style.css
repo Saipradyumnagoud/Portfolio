@@ -334,7 +334,7 @@ form input,form textarea{
 } */
 /* inspired form gumroad website */
 .butt {
-    --bg: white;
+    --bg: grey;
     --hover-bg: #ff90e8;
     --hover-text: #000;
     color: black;
