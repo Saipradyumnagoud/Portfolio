@@ -411,7 +411,9 @@ form input,form textarea{
   .work:hover img{
     filter: brightness(0.6);
   }
-        @media only screen and (max-width: 768px) {
+  
+        @media only screen and (max-width: 768px) 
+        {
             .container {
                 padding: 10px; 
             }
@@ -488,6 +490,40 @@ form input,form textarea{
                 font-size: 50px;
                 text-align: center;
             }
+            
         }
-    
-    
+        @media only screen and (max-width: 600px) {
+            #navbar h1 {
+                font-size: 30px;
+            }
+            
+            #navbar ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: black;
+                z-index: 1;
+            }
+            
+            #navbar ul.active {
+                display: flex;
+            }
+            
+            #navbar li {
+                margin: 10px 0;
+            }
+            
+            #menu-icon {
+                display: block; /* Show the menu icon on mobile */
+            }
+        }
+        
+        /* Hide the menu icon on larger screens */
+        @media only screen and (min-width: 601px) {
+            #menu-icon {
+                display: none;
+            }
+        }
