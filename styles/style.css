@@ -1,0 +1,251 @@
+/* Global styles */
+body {
+    background: #FBEAEB;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+header {
+    background: #2F3C7E;
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Ensure header is above loader */
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav img {
+    max-height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #1F2A5E;
+    color: #FFD700;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    color: black;
+    border-radius: 10px;
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.left {
+    margin-right: 20px;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}
+
+.typing {
+    border-right: 2px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+.right img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Loader styles */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it's above all other content */
+}
+
+.loader_cube {
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+}
+
+.loader_cube--glowing {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    animation: glowing 1.5s ease-in-out infinite;
+}
+
+.loader_cube--color {
+    background: linear-gradient(135deg, #1afbf0, #da00ff);
+    animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes glowing {
+    0% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+
+.Resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: blue;
+    color: white; 
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: #000;
+}
+
+.Resume a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #2F3C7E;
+        position: absolute;
+        top: 70px;
+        left: 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        border-top: 1px solid #1F2A5E;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    .container {
+        flex-direction: column; /* Change to column layout for mobile */
+        padding: 50px 20px; /* Adjust padding for better spacing */
+    }
+
+    .left, .right {
+        width: 100%; /* Take full width */
+        margin: 0; /* Remove margin */
+    }
+
+    .right {
+        margin-top: 50px;
+        align-self: flex-end; /* Align .right to the bottom */
+    }
+
+    .intro {
+        text-align: center; /* Center align text */
+        margin-bottom: 20px; /* Add some bottom margin */
+    }
+
+    .Resume {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background-color: blue;
+        color: white; 
+        border-radius: 10px;
+        border-width: 3px;
+        border-color: #000;
+    }
+    
+    .Resume a {
+        color: white; 
+        text-decoration: none; 
+    }
+}

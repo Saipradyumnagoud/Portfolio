@@ -1,0 +1,130 @@
+body {
+    background: #FBEAEB;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+header {
+    background: #2F3C7E;
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Ensure header is above loader */
+    width: 100%;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav img {
+    max-height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #1F2A5E;
+    color: #FFD700;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    color: black;
+    border-radius: 10px;
+    animation: pop 0.5s ease-out;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #2C3E50;
+}
+
+h1 span {
+    font-size: 35px;
+    color: #A9DFBF;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #2C3E50;
+}
+@keyframes pop {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #2F3C7E;
+        position: absolute;
+        top: 70px;
+        left: 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        border-top: 1px solid #1F2A5E;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
