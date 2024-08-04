@@ -13,7 +13,6 @@ header {
     top: 0;
     z-index: 100; 
     width: 100%;
-    
 }
 
 nav {
@@ -52,53 +51,12 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px 20px;
-    color: black;
-    border-radius: 10px;
-    animation: pop 0.5s ease-out;
-}
-
-h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-align: left;
-    color: #2C3E50;
-}
-
-h1 span {
-    font-size: 35px;
-    color: #A9DFBF;
-}
-
-p {
-    font-size: 20px;
-    line-height: 1.8;
-    text-align: justify;
-    color: #2C3E50;
-}
-@keyframes pop {
-    0% {
-        transform: scale(0.8);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
 .menu-icon {
     display: none;
     font-size: 30px;
     cursor: pointer;
 }
+
 @media (max-width: 768px) {
     nav ul {
         display: none;

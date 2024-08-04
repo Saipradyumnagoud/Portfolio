@@ -13,7 +13,6 @@ header {
     top: 0;
     z-index: 100; 
     width: 100%;
-    
 }
 
 nav {
@@ -52,53 +51,12 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px 20px;
-    color: black;
-    border-radius: 10px;
-    animation: pop 0.5s ease-out;
-}
-
-h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-align: left;
-    color: #2C3E50;
-}
-
-h1 span {
-    font-size: 35px;
-    color: #A9DFBF;
-}
-
-p {
-    font-size: 20px;
-    line-height: 1.8;
-    text-align: justify;
-    color: #2C3E50;
-}
-@keyframes pop {
-    0% {
-        transform: scale(0.8);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
 .menu-icon {
     display: none;
     font-size: 30px;
     cursor: pointer;
 }
+
 @media (max-width: 768px) {
     nav ul {
         display: none;
@@ -127,4 +85,69 @@ p {
     .menu-icon {
         display: block;
     }
+}
+
+.skills-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.skills-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2F3C7E;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    background: #2F3C7E;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-10px);
+}
+
+.skill h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+.skill-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-buttons button {
+    background: #FFD700;
+    border: none;
+    color: #2F3C7E;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.skill-buttons button:hover {
+    background-color: #FFC300;
+}
+
+.skill-buttons button i {
+    margin-right: 10px;
 }
