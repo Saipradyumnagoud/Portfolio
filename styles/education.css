@@ -56,6 +56,68 @@ nav ul li a:hover {
     font-size: 30px;
     cursor: pointer;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 10px;
+    animation: pop 0.5s ease-out;
+}
+.timeline {
+    position: relative;
+    padding: 10px 0;
+    margin: 20px 0;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 20px; /* Adjust for spacing from the left */
+    top: 0;
+    height: 100%;
+    border-left: 10px solid #FFD700;
+    z-index: 1;
+}
+
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 50px; 
+    padding-top: 50px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 10px; /* Position of the dot */
+    width: 10px;
+    height: 10px;
+    background: #FFD700;
+    border-radius: 50%;
+    border: 10px solid #FBEAEB;
+    z-index: 2;
+}
+
+.timeline-content {
+    background: #FBEAEB;
+    border: 1px solid #2F3C7E;
+    border-radius: 6px;
+    padding: 10px 20px;
+    color: black;
+    position: relative;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+}
+
+.timeline-content img{
+    flex-direction: ;
+}
 
 @media (max-width: 768px) {
     nav ul {
