@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Pradyumna</title>
+    <title>Contact - Sai Pradyumna</title>
     <link rel="icon" href="Images/logo.png" type="image/png">
     <link rel="stylesheet" href="styles/contact.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
     
@@ -27,24 +29,36 @@
 
     <main>
         <div class="container">
-            <h1>Contact Form</h1>
-            <form action="https://formsubmit.co/saipradyumnagoud@gmail.com" method="POST">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" required>
-                
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
-                <button type="submit" class="button">Send Message</button>
-            </form>
+            <div class="contact-info">
+                <h2><u>Contact Me</u></h2>
+                <p>Email: <a href="mailto:saipradyumnagoud@gmail.com">saipradyumnagoud@gmail.com</a></p>
+                <p>Phone: <a href="tel:+91 8333086241">+91 8333086241</a></p>
+                <a href="https://www.linkedin.com/in/saipradyumnagoudch/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/saipradyumnagoud" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/saipradyumna_ch?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <hr>
+            <div class="contact-form">
+                <h1><u>Connect with me</u></h1>
+                <form action="https://formsubmit.co/saipradyumnagoud@gmail.com" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+            </div>
         </div>
     </main>
+    
     <script>
         function toggleMenu() {
             var menu = document.getElementById('menu');
