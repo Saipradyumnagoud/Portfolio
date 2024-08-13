@@ -56,7 +56,16 @@ nav ul li a:hover {
     font-size: 30px;
     cursor: pointer;
 }
-
+@keyframes pop {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 @media (max-width: 768px) {
     nav ul {
         display: none;
