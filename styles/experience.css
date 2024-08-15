@@ -116,6 +116,9 @@ nav ul li a:hover {
     margin-top: 0;
 }
 
+.timeline-content h4{
+    color: lightcoral;
+}
 .timeline-content img{
     flex-direction: ;
 }
