@@ -211,4 +211,7 @@ nav ul li a:hover {
         width: 95%;
         padding: 15px;
     }
+    .my{
+        width: 10%;
+    }
 }
