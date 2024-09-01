@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background: #2F3C7E;
+    background: linear-gradient(90deg, #2F3C7E, #1F2A5E);
     position: sticky;
     top: 0;
     z-index: 100; /* Ensure header is above loader */

@@ -4,15 +4,17 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    line-height: 1.6;
 }
 
 header {
-    background: #2F3C7E;
+    background: linear-gradient(90deg, #2F3C7E, #1F2A5E);
     position: sticky;
     top: 0;
-    z-index: 100; 
+    z-index: 100;
     width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -35,6 +37,11 @@ nav ul {
 
 nav ul li {
     margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover {
+    transform: translateY(-3px);
 }
 
 nav ul li a {
@@ -43,19 +50,21 @@ nav ul li a {
     padding: 10px 15px;
     display: block;
     transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
     background-color: #1F2A5E;
     color: #FFD700;
-    border-radius: 5px;
 }
 
 .menu-icon {
     display: none;
     font-size: 30px;
     cursor: pointer;
+    color: white;
 }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -63,61 +72,83 @@ nav ul li a:hover {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px 20px;
-    color: black;
+    padding: 20px;
+    
+    color: #333;
     border-radius: 10px;
+    
     animation: pop 0.5s ease-out;
 }
+
 .timeline {
     position: relative;
-    padding: 10px 0;
-    margin: 20px 0;
+    padding: 20px 0;
+    margin: 40px 0;
 }
 
 .timeline:before {
     content: '';
     position: absolute;
-    left: 20px; 
+    left: 30px;
     top: 0;
     height: 100%;
-    border-left: 10px solid lightgreen;
+    border-left: 6px solid lightgreen;
     z-index: 1;
+    transition: border-color 0.3s ease;
 }
 
 .timeline-item {
     position: relative;
-    margin: 20px 0;
-    padding-left: 50px; 
-    padding-top: 50px;
+    margin: 40px 0;
+    padding-left: 70px;
+}
+
+.timeline-item:hover .timeline-dot {
+    transform: scale(1.2);
+    background-color: lightgreen;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .timeline-dot {
     position: absolute;
-    left: 10px; /* Position of the dot */
-    width: 10px;
-    height: 10px;
-    background: maroon;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-image: url('https://static-00.iconduck.com/assets.00/graduation-cap-icon-512x335-2rjjt0b3.png');
+    background-size: cover;
     border-radius: 50%;
-    border: 10px solid #FBEAEB;
+    border: 5px solid #FBEAEB;
     z-index: 2;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .timeline-content {
     background: #FBEAEB;
     border: 1px solid #2F3C7E;
     border-radius: 6px;
-    padding: 10px 20px;
-    color: black;
+    padding: 20px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.timeline-content:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-color: lightgreen;
 }
 
 .timeline-content h3 {
     margin-top: 0;
+    color: #2F3C7E;
 }
 
-.timeline-content img{
-    flex-direction: ;
+.timeline-content img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
 }
+
 @keyframes pop {
     0% {
         transform: scale(0.8);
@@ -128,6 +159,7 @@ nav ul li a:hover {
         opacity: 1;
     }
 }
+
 @media (max-width: 768px) {
     nav ul {
         display: none;
@@ -155,5 +187,28 @@ nav ul li a:hover {
 
     .menu-icon {
         display: block;
+    }
+
+    .timeline:before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        padding-left: 50px;
+    }
+
+    .timeline-dot {
+        left: 5px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .timeline-content {
+        padding: 15px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 15px;
     }
 }
