@@ -38,7 +38,7 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
+    text-decoration: none; /* Removes the underline */
     color: white;
     padding: 10px 15px;
     display: block;
@@ -56,6 +56,7 @@ nav ul li a:hover {
     font-size: 30px;
     cursor: pointer;
 }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -68,56 +69,65 @@ nav ul li a:hover {
     border-radius: 10px;
     animation: pop 0.5s ease-out;
 }
-.timeline {
-    position: relative;
-    padding: 10px 0;
-    margin: 20px 0;
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
-.timeline:before {
-    content: '';
-    position: absolute;
-    left: 20px; 
-    top: 0;
-    height: 100%;
-    border-left: 10px solid lightgreen;
-    z-index: 1;
-}
-
-.timeline-item {
-    position: relative;
-    margin: 20px 0;
-    padding-left: 50px; 
-    padding-top: 50px;
-}
-
-.timeline-dot {
-    position: absolute;
-    left: 10px; /* Position of the dot */
-    width: 10px;
-    height: 10px;
-    background: maroon;
-    border-radius: 50%;
-    border: 10px solid #FBEAEB;
-    z-index: 2;
-}
-
-.timeline-content {
-    background: #FBEAEB;
-    border: 1px solid #2F3C7E;
-    border-radius: 6px;
-    padding: 10px 20px;
+.project-card {
+    background: white;
     color: black;
-    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.timeline-content h3 {
-    margin-top: 0;
+.project-card h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
 }
 
-.timeline-content img{
-    flex-direction: ;
+.project-card p {
+    margin: 0;
+    font-size: 1rem;
 }
+
+.project-card a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit;
+    display: block;
+    transition: color 0.3s;
+}
+
+.project-card a:hover {
+    color: #FFD700;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #e4d6fb, #8400ff);
+    color: white;
+}
+.no-underline {
+    text-decoration: none;
+  }
 @keyframes pop {
     0% {
         transform: scale(0.8);
@@ -128,6 +138,7 @@ nav ul li a:hover {
         opacity: 1;
     }
 }
+
 @media (max-width: 768px) {
     nav ul {
         display: none;
