@@ -167,4 +167,7 @@ nav ul li a:hover {
     .menu-icon {
         display: block;
     }
+    .projects-grid {
+        grid-template-columns: 1fr; /* Make the cards one after the other */
+    }
 }
