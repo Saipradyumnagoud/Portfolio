@@ -22,7 +22,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    
 }
 
 nav img {
@@ -54,6 +53,7 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+/* Main container */
 .container {
     display: flex;
     justify-content: space-between;
@@ -66,12 +66,9 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-.left, .right {
-    flex: 1;
-}
-
 .left {
-    margin-right: 20px;
+    flex: 1;
+    padding-right: 20px; /* Replaced margin with padding */
 }
 
 .right {
@@ -84,6 +81,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     font-size: 40px;
+    margin-bottom: 20px; /* Added margin for better spacing */
 }
 
 .typing {
@@ -91,6 +89,8 @@ nav ul li a:hover {
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
+    max-width: 100%; /* Ensure the typing text doesn't overflow */
+    font-size: 40px;
     animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
 }
 
@@ -161,6 +161,7 @@ nav ul li a:hover {
     }
 }
 
+/* Resume button */
 .Resume {
     display: flex;
     flex-direction: column;
@@ -179,11 +180,13 @@ nav ul li a:hover {
     text-decoration: none; 
 }
 
+/* Mobile styles */
 .menu-icon {
     display: none;
     font-size: 30px;
     cursor: pointer;
 }
+
 @media (max-width: 768px) {
     nav ul {
         display: none;
@@ -212,6 +215,7 @@ nav ul li a:hover {
     .menu-icon {
         display: block;
     }
+
     .container {
         flex-direction: column; /* Change to column layout for mobile */
         padding: 50px 20px; /* Adjust padding for better spacing */
@@ -229,9 +233,13 @@ nav ul li a:hover {
 
     .intro {
         text-align: center; /* Center align text */
-        margin-bottom: 20px; /* Add some bottom margin */
+        font-size: 30px; /* Adjust font size for mobile */
     }
 
+    .typing {
+        font-size: 30px; /* Adjust typing text size for mobile */
+    }
+    
     .Resume {
         display: flex;
         flex-direction: column;
@@ -244,9 +252,15 @@ nav ul li a:hover {
         border-width: 3px;
         border-color: #000;
     }
-    
+
     .Resume a {
         color: white; 
         text-decoration: none; 
+    }
+    .intro{
+        font-size: 20px;
+    }
+    .typing{
+        font-size: 20px;
     }
 }
