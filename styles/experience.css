@@ -169,14 +169,14 @@ nav ul li a:hover {
 
 .timeline-dot {
     position: absolute;
-    left: 10px; /* Position of the dot */
+    left: 10px; 
     width: 10px;
     height: 10px;
     background: maroon;
     border-radius: 50%;
     border: 10px solid #FBEAEB;
     z-index: 2;
-}
+}*/
 
 .timeline-content {
     background: #FBEAEB;
@@ -196,7 +196,7 @@ nav ul li a:hover {
 }
 .timeline-content img{
     flex-direction: ;
-} */
+} 
 @keyframes pop {
     0% {
         transform: scale(0.8);
