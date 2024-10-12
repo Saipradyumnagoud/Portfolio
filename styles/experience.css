@@ -194,9 +194,9 @@ nav ul li a:hover {
 .timeline-content h4{
     color: lightcoral;
 }
-.timeline-content img{
+/* .timeline-content img{
     flex-direction: ;
-} 
+}  */
 @keyframes pop {
     0% {
         transform: scale(0.8);
