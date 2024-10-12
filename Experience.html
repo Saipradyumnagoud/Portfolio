@@ -29,32 +29,78 @@
     <main>
         <div class="container">
             <h1 style="text-align: center;"> <i class="fa-solid fa-briefcase"></i> My <span style="color: blueviolet;">Experience</span></h1>
-            <div class="timeline">
+            <!-- <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>May2024-Aug2024</h3>
-                        <h3>GirlScript Summer of Code(Open Source Contributor)</h3>
-                        <h4><span>•</span>&nbsp; Among 2000+ participants Achieved 27th Rank Globally</h4>
-                        <h4><span>•</span>&nbsp; Contributor to 10+ Amazing Projects</h4>
-                        <h4><span>•</span>&nbsp; Tech Stack: HTML,CSS,JS,REACT</h4>
                         
-                        <!-- <p>GirlScript is a global community of 1500+ participants from around the world who are learning to code through various projects. I participated in the GirlScript Summer of Code 2024, where I developed a web application to manage a library system. Among all the participants, I achieved 27th place on the leaderboard.</p> -->
+                        
 
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>May2024-June2024</h3>
-                        <h3>Unified Mentor Pvt LTD(Web Developer Internship)</h3>
-                        <h4><span>•</span>&nbsp; Completed 3 Tasks during This Intership.</h4>
-                        <h4><span>•</span>&nbsp; Made a To-Do List,Calculator,Hospital Managment system.</h4>
-                        <h4><span>•</span>&nbsp; Tech Stack: HTML,CSS,JS</h4>
+                        
                     </div>
                 </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        
+                        
+
+                    </div>
+                </div>
+            </div> -->
+            <section class="design-section">
+                <div class="timeline">
                 
-            </div>
+                         
+                                  <div class="timeline-empty">
+                                  </div>
+                
+                
+                               <div class="timeline-middle">
+                                   <div class="timeline-circle"></div>
+                               </div>
+                               <div class="timeline-component timeline-content">
+                                <h3>May2024-Aug2024</h3>
+                        <h3>GirlScript Summer of Code(Open Source Contributor)</h3>
+                        <h4><span>•</span>&nbsp; Among 2000+ participants Achieved 27th Rank Globally</h4>
+                        <h4><span>•</span>&nbsp; Contributor to 10+ Amazing Projects</h4>
+                        <h4><span>•</span>&nbsp; Tech Stack: HTML,CSS,JS,REACT</h4>
+                           </div>
+                                <div class="timeline-component timeline-content">
+                                    <h3>May2024-June2024</h3>
+                                    <h3>Unified Mentor Pvt LTD(Web Developer Internship)</h3>
+                                    <h4><span>•</span>&nbsp; Completed 3 Tasks during This Intership.</h4>
+                                    <h4><span>•</span>&nbsp; Made a To-Do List,Calculator,Hospital Managment system.</h4>
+                                    <h4><span>•</span>&nbsp; Tech Stack: HTML,CSS,JS</h4>
+                                </div>
+                                <div class="timeline-middle">
+                                    <div class="timeline-circle"></div>
+                                </div>
+                                <div class="timeline-empty">
+                                </div>
+                
+                                <div class="timeline-empty">
+                                </div>
+                
+                               <div class="timeline-middle">
+                                   <div class="timeline-circle"></div>
+                               </div>
+                               <div class=" timeline-component timeline-content">
+                                <h3>Oct2024-Nov2024</h3>
+                        <h3>Hacktober Fest(Contributor)</h3>
+                        <h4><span>•</span>&nbsp; Completed All 4 Levels</h4>
+                        <h4><span>•</span>&nbsp; Contributor to 5+ Amazing Projects</h4>
+                        <h4><span>•</span>&nbsp; Tech Stack: HTML,CSS,JS,REACT,Java</h4>
+                           </div>
+                
+                       </div>
+                    </div> 
+                </section>
         </div>
     </main>
     <script>
@@ -62,6 +108,19 @@
             var menu = document.getElementById('menu');
             menu.classList.toggle('show');
         }
+        
+    </script>
+    <script>
+        const timelineItems = document.querySelectorAll('.timeline-item');
+window.addEventListener('scroll', () => {
+    timelineItems.forEach(item => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+            item.classList.add('show');
+        }
+    });
+});
+
     </script>
 </body>
 </html>
