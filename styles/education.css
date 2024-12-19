@@ -7,7 +7,9 @@ body {
     overflow-x: hidden;
     line-height: 1.6;
 }
-
+h1{
+    color: #333;
+}
 header {
     background: linear-gradient(90deg, #2F3C7E, #1F2A5E);
     position: sticky;
@@ -66,89 +68,83 @@ nav ul li a:hover {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 80%;
+    width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    
-    color: #333;
-    border-radius: 10px;
-    
-    animation: pop 0.5s ease-out;
+    margin: 20px auto;
+    text-align: center;
 }
 
 .timeline {
     position: relative;
     padding: 20px 0;
-    margin: 40px 0;
+    margin: 20px 0;
+    animation: fadeIn 1.5s ease-out;
 }
 
 .timeline:before {
     content: '';
     position: absolute;
-    left: 30px;
+    left: 50%;
     top: 0;
+    transform: translateX(-50%);
     height: 100%;
-    border-left: 6px solid lightgreen;
-    z-index: 1;
-    transition: border-color 0.3s ease;
+    width: 4px;
+    background: lightgreen;
 }
 
 .timeline-item {
     position: relative;
-    margin: 40px 0;
-    padding-left: 70px;
+    width: 50%;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #333;
+    animation: slideIn 1s ease-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.timeline-item:hover .timeline-dot {
-    transform: scale(1.2);
-    background-color: lightgreen;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+.timeline-item:nth-child(odd) {
+    left: 0;
+    margin-left: 50%;
+}
+
+.timeline-item:nth-child(even) {
+    right: 0;
+    margin-right: 50%;
+}
+
+.timeline-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(144, 238, 144, 0.6);
 }
 
 .timeline-dot {
     position: absolute;
-    left: 10px;
-    width: 40px;
-    height: 40px;
-    background-image: url('https://static-00.iconduck.com/assets.00/graduation-cap-icon-512x335-2rjjt0b3.png');
-    background-size: cover;
+    top: 20px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    background: lightgreen;
     border-radius: 50%;
-    border: 5px solid #FBEAEB;
-    z-index: 2;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.timeline-content {
-    background: #FBEAEB;
-    border: 1px solid #2F3C7E;
-    border-radius: 6px;
-    padding: 20px;
-    color: #333;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-    transition: box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.timeline-content:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    border-color: lightgreen;
-}
-
-.timeline-content h3 {
-    margin-top: 0;
-    color: #2F3C7E;
+    box-shadow: 0 0 10px lightgreen;
+    animation: glow 1.5s infinite;
 }
 
 .timeline-content img {
-    max-width: 100%;
-    border-radius: 5px;
-    margin-top: 10px;
+    max-width: 100px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    animation: fadeIn 1.5s ease-out;
 }
 
+.timeline-content h3 {
+    color: #2F3C7E;
+}
+
+.timeline-content p {
+    color: #333;
+}
 @keyframes pop {
     0% {
         transform: scale(0.8);
@@ -190,28 +186,24 @@ nav ul li a:hover {
     }
 
     .timeline:before {
-        left: 20px;
+        left: 10px;
     }
 
     .timeline-item {
-        padding-left: 50px;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .timeline-dot {
-        left: 5px;
-        width: 30px;
-        height: 30px;
+        left: -20px;
     }
-
-    .timeline-content {
-        padding: 15px;
-    }
-
-    .container {
-        width: 95%;
-        padding: 15px;
-    }
-    .my{
+    .my {
         width: 10%;
     }
 }
