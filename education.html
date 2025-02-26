@@ -6,8 +6,7 @@
     <title>Education - Sai Pradyumna</title>
     <link rel="icon" href="Images/logo.png" type="image/png">
     <link rel="stylesheet" href="styles/education.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
-        integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM64DgSK+rtavq2WIOzyYUP8NGL/+3eHvd+u8Ho" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -25,37 +24,32 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <div class="container">
-            <h1><u><img class="my" src="https://static-00.iconduck.com/assets.00/graduation-cap-icon-512x335-2rjjt0b3.png" 
-                width="4%"> My <span class="highlight">Education</span></h1></u>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="timeline-content">
-                        <h3>2022-Present</h3>
-                        <img src="Images/kitsw.jpg" alt="KITSW">
-                        <h2>BTech CSE (N)</h2>
-                        <h3>Kakatiya Institute of Technology and Science</h3>
-                        <p>I am pursuing Bachelor of Technology in Computer Science and Engineering from Kakatiya Institute of Technology and Science.</p>
-                    </div>
+            <h1 style="text-align: center;"><u>My Education</u></h1>
+            <br>
+            <div class="education-grid">
+                <div class="education-card">
+                    <img src="Images/kitsw.jpg" alt="KITSW">
+                    <h2><i class="fas fa-graduation-cap"></i> BTech CSE (N)</h2>
+                    <h3>Kakatiya Institute of Technology and Science (2022 - Present)</h3>
+                    <p>Pursuing Bachelor of Technology in Computer Science and Engineering.</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="timeline-content">
-                        <h3>2020-22</h3>
-                        <img src="Images/src.png" width="25%" alt="Sri Chaitanya">
-                        <h2>Intermediate (MPC)</h2>
-                        <h3>Sri Chaitanya Jr College</h3>
-                        <p>I completed my Intermediate in Sri Chaitanya under the Maths stream with 93%.</p>
-                    </div>
+                
+                <div class="education-card">
+                    <img src="Images/src.png" alt="Sri Chaitanya">
+                    <h2><i class="fas fa-school"></i> Intermediate (MPC)</h2>
+                    <h3>Sri Chaitanya Jr College (2020 - 2022)</h3>
+                    <p>Completed Intermediate under Maths stream with 93%.</p>
                 </div>
             </div>
         </div>
     </main>
+
     <script>
         function toggleMenu() {
-            const menu = document.getElementById('menu');
+            var menu = document.getElementById('menu');
             menu.classList.toggle('show');
         }
     </script>

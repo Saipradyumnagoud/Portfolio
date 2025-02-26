@@ -1,8 +1,9 @@
 /* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
 body {
     background: #FBEAEB;
     color: white;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Jost', sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevent horizontal scroll */
