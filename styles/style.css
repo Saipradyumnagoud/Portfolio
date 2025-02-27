@@ -1,20 +1,20 @@
-/* Global styles */
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
 body {
-    background: #FBEAEB;
-    color: white;
+    background: #f9f9f9;
+    color: #333;
     font-family: 'Jost', sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden;
 }
 
 header {
-    background: linear-gradient(90deg, #2F3C7E, #1F2A5E);
+    background: white;
     position: sticky;
     top: 0;
-    z-index: 100; /* Ensure header is above loader */
+    z-index: 100;
     width: 100%;
+    padding: 15px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -22,7 +22,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 0 40px;
 }
 
 nav img {
@@ -37,21 +37,19 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: black;
+    font-weight: 500;
     padding: 10px 15px;
-    display: block;
-    transition: background-color 0.3s, color 0.3s;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #1F2A5E;
-    color: #FFD700;
-    border-radius: 5px;
+    color: #bbb;
 }
 
 /* Main container */
@@ -61,56 +59,48 @@ nav ul li a:hover {
     align-items: center;
     width: 80%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px 0;
-    color: black;
-    border-radius: 10px;
+    margin: 100px auto;
+    color: #222;
 }
 
-.left {
-    flex: 1;
-    padding-right: 20px; /* Replaced margin with padding */
+.left h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-.right {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-}
-
-.intro {
-    display: flex;
-    align-items: center;
-    font-size: 40px;
-    margin-bottom: 20px; /* Added margin for better spacing */
+.left p {
+    font-size: 22px;
+    color: #666;
 }
 
 .typing {
-    border-right: 2px solid black;
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-    max-width: 100%; /* Ensure the typing text doesn't overflow */
-    font-size: 40px;
-    animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
-}
-
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink {
-    from, to { border-color: transparent; }
-    50% { border-color: black; }
+    font-weight: 600;
+    color: #000;
+    font-size: 24px;
 }
 
 .right img {
     max-width: 100%;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Resume button */
+.Resume {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.Resume:hover {
+    background: #333;
 }
 
 /* Loader styles */
@@ -120,27 +110,18 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000; /* Ensure it's above all other content */
+    z-index: 1000;
 }
 
 .loader_cube {
     width: 80px;
     height: 80px;
     border-radius: 16px;
-}
-
-.loader_cube--glowing {
-    background-color: rgba(255, 255, 255, 0.2);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    animation: glowing 1.5s ease-in-out infinite;
-}
-
-.loader_cube--color {
-    background: linear-gradient(135deg, #1afbf0, #da00ff);
+    background: #000;
     animation: rotate 1.5s linear infinite;
 }
 
@@ -150,42 +131,12 @@ nav ul li a:hover {
     }
 }
 
-@keyframes glowing {
-    0% {
-        opacity: 0.2;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0.2;
-    }
-}
-
-/* Resume button */
-.Resume {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: blue;
-    color: white; 
-    border-radius: 10px;
-    border-width: 3px;
-    border-color: #000;
-}
-
-.Resume a {
-    color: white; 
-    text-decoration: none; 
-}
-
 /* Mobile styles */
 .menu-icon {
     display: none;
     font-size: 30px;
     cursor: pointer;
+    color: black;
 }
 
 @media (max-width: 768px) {
@@ -193,10 +144,12 @@ nav ul li a:hover {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #2F3C7E;
+        background-color: white;
         position: absolute;
         top: 70px;
         left: 0;
+        text-align: center;
+        padding: 10px 0;
     }
 
     nav ul.show {
@@ -205,12 +158,7 @@ nav ul li a:hover {
 
     nav ul li {
         margin: 0;
-        text-align: center;
-    }
-
-    nav ul li a {
-        padding: 15px;
-        border-top: 1px solid #1F2A5E;
+        padding: 10px 0;
     }
 
     .menu-icon {
@@ -218,50 +166,11 @@ nav ul li a:hover {
     }
 
     .container {
-        flex-direction: column; /* Change to column layout for mobile */
-        padding: 50px 20px; /* Adjust padding for better spacing */
-    }
-
-    .left, .right {
-        width: 100%; /* Take full width */
-        margin: 0; /* Remove margin */
+        flex-direction: column;
+        text-align: center;
     }
 
     .right {
-        margin-top: 50px;
-        align-self: flex-end; /* Align .right to the bottom */
-    }
-
-    .intro {
-        text-align: center; /* Center align text */
-        font-size: 30px; /* Adjust font size for mobile */
-    }
-
-    .typing {
-        font-size: 30px; /* Adjust typing text size for mobile */
-    }
-    
-    .Resume {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        background-color: blue;
-        color: white; 
-        border-radius: 10px;
-        border-width: 3px;
-        border-color: #000;
-    }
-
-    .Resume a {
-        color: white; 
-        text-decoration: none; 
-    }
-    .intro{
-        font-size: 20px;
-    }
-    .typing{
-        font-size: 20px;
+        margin-top: 40px;
     }
 }

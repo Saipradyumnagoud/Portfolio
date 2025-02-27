@@ -1,26 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
 body {
-    background: #FBEAEB;
-    color: white;
+    background: #f9f9f9;
+    color: #333;
     font-family: 'Jost', sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 header {
-    background: linear-gradient(90deg, #2F3C7E, #1F2A5E);
+    background: white;
     position: sticky;
     top: 0;
-    z-index: 100; 
+    z-index: 100;
     width: 100%;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 0 40px;
 }
 
 nav img {
@@ -35,28 +37,27 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: black;
+    font-weight: 500;
     padding: 10px 15px;
-    display: block;
-    transition: background-color 0.3s, color 0.3s;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #1F2A5E;
-    color: #FFD700;
-    border-radius: 5px;
+    color: #bbb;
 }
-
 .menu-icon {
     display: none;
     font-size: 30px;
     cursor: pointer;
+    color: black;
 }
+
 @keyframes pop {
     0% {
         transform: scale(0.8);
@@ -67,15 +68,18 @@ nav ul li a:hover {
         opacity: 1;
     }
 }
+
 @media (max-width: 768px) {
     nav ul {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #2F3C7E;
+        background-color: white;
         position: absolute;
         top: 70px;
         left: 0;
+        text-align: center;
+        padding: 10px 0;
     }
 
     nav ul.show {
@@ -84,28 +88,33 @@ nav ul li a:hover {
 
     nav ul li {
         margin: 0;
-        text-align: center;
-    }
-
-    nav ul li a {
-        padding: 15px;
-        border-top: 1px solid #1F2A5E;
+        padding: 10px 0;
     }
 
     .menu-icon {
         display: block;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right {
+        margin-top: 40px;
     }
 }
 
 .skills-section {
     padding: 50px 20px;
     text-align: center;
+    animation: pop 0.5s ease-out;
 }
 
 .skills-section h1 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #2F3C7E;
+    color: #222;
 }
 
 .skills-container {
@@ -115,7 +124,8 @@ nav ul li a:hover {
 }
 
 .skill {
-    background: #2F3C7E;
+    background: #333;
+    color: white;
     padding: 20px;
     margin: 10px;
     border-radius: 8px;
@@ -131,7 +141,7 @@ nav ul li a:hover {
 .skill h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #FFD700;
+    color: whitesmoke;
 }
 
 .skill-buttons {
@@ -141,9 +151,9 @@ nav ul li a:hover {
 }
 
 .skill-buttons button {
-    background: #FFD700;
+    background: #000;
     border: none;
-    color: #2F3C7E;
+    color: #fff;
     padding: 10px 15px;
     margin: 5px;
     border-radius: 5px;
@@ -155,7 +165,7 @@ nav ul li a:hover {
 }
 
 .skill-buttons button:hover {
-    background-color: #FFC300;
+    background-color: #333;
 }
 
 .skill-buttons button i {
