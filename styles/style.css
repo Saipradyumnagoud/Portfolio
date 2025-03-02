@@ -141,7 +141,7 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
     nav ul {
-        display: none;
+        display: flex;
         flex-direction: column;
         width: 100%;
         background-color: white;
@@ -150,10 +150,16 @@ nav ul li a:hover {
         left: 0;
         text-align: center;
         padding: 10px 0;
+        opacity: 0;
+        transform: scale(0.9);
+        transition: opacity 1s ease-out, transform 0.6s ease-out;
+        pointer-events: none; /* Prevents interaction when hidden */
     }
 
     nav ul.show {
-        display: flex;
+        opacity: 1;
+        transform: scale(1);
+        pointer-events: auto;
     }
 
     nav ul li {
