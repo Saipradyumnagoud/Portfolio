@@ -145,7 +145,6 @@ nav ul li a:hover {
     color: black;
     z-index: 101;
     position: absolute;
-    top: 20px;
     right: 30px;
 }
 

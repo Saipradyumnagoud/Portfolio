@@ -108,7 +108,6 @@ p {
     color: black;
     z-index: 101;
     position: absolute;
-    top: 20px;
     right: 30px;
 }
 /* Hide menu icons for larger screens */
